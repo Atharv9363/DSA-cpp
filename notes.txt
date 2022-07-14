@@ -1,0 +1,57 @@
+problem solving
+-understand
+
+-given values
+
+- approach
+
+-program
+
+
+Flow chart:
+Diagramatic representation of a approach.
+
+start / end ---> terminator
+
+input/output ---> parallelogram
+
+process --->square
+
+decision making block ---> rhombus/diamond shape
+
+connecting/showing flow ---> arrows
+
+Pseudocode:
+Generic way of representing code.
+
+
+Data Types:
+int
+char
+boolean
+float
+double
+
+
+Variable:
+not starts with no.
+
+Arithmetic Operators
++
+-
+*
+/
+
+Relational Operators
+=
+>
+<
+<=
+>=
+!=
+
+Logical Operator
+&&
+||
+!
+
