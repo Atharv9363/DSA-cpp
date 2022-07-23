@@ -9,14 +9,14 @@ int main(){
 
 	int ans=0;
 	int i=0;
-/*//Decimal to Binary	
-	while(n != 0){
-		int bit=n & 1;
-		ans =(bit * pow(10,i))+ans;
-		n = n>>1;
-		i++;
-	}
-	cout<<"Answer is "<<ans<<endl;*/
+//Decimal to Binary	
+	// while(n != 0){
+	// 	int bit=n & 1;
+	// 	ans =(bit * pow(10,i))+ans;
+	// 	n = n>>1;
+	// 	i++;
+	// }
+	// cout<<"Answer is "<<ans<<endl;
 
 //Binary to Decimal
 	while(n!=0){
@@ -28,5 +28,4 @@ int main(){
 		i++;
 	}
 	cout<<ans<<endl;
-
 } 
