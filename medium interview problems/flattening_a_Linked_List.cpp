@@ -82,7 +82,7 @@ Node* mergeTwoLists(Node* a, Node* b) {
     
     if(a) temp->child = a; 
     else temp->child = b; 
-    temp -> child -> next = NULL;
+    temp -> next = NULL;
     return res -> child; 
     
 }
@@ -103,5 +103,5 @@ Node* flattenLinkedList(Node* head)
         return head;
 }
 
-//Here on code studio time limit is exceeding for this solution........
+
 
