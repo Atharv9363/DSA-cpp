@@ -67,22 +67,26 @@ Node* mergeTwoLists(Node* a, Node* b) {
     Node *temp = new Node(0);
     Node *res = temp; 
     
-    while(a != NULL && b != NULL) {
-        if(a->data < b->data) {
+    while(a != NULL && b != NULL) {  //It will check until a and b reaches null 
+        if(a->data < b->data) { //For checking whether a is less than b if it is less then a will be added  to child of temp list.
             temp-> child = a; 
             temp = temp-> child; 
             a = a-> child; 
         }
         else {
-            temp-> child = b;
+            temp-> child = b;	//else b will be added to child of temp list
             temp = temp-> child; 
             b = b-> child; 
         }
     }
     
+    //After satisfying above conditions if there any elements present in a or in b then they will be added in temp list.	
     if(a) temp->child = a; 
     else temp->child = b; 
-    temp -> next = NULL;
+    
+    //Pointing next of the temp to the NULL.
+    temp -> next = NULL; 
+   
     return res -> child; 
     
 }
@@ -91,15 +95,11 @@ Node* flattenLinkedList(Node* head)
 {
          if (head == NULL || head->next == NULL) 
             return head; 
-  
-        // recur for list on right 
+ 
         head->next = flattenLinkedList(head->next); 
-  
-        // now merge 
+ 
         head = mergeTwoLists(head, head->next); 
   
-        // return the root 
-        // it will be in turn merged with its left 
         return head;
 }
 
