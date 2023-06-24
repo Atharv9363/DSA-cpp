@@ -1,4 +1,6 @@
 //https://www.codingninjas.com/codestudio/problems/aggressive-cows_1082559
+//https://practice.geeksforgeeks.org/problems/aggressive-cows/0
+
 bool isPossible(vector <int> &stalls, int k, int mid, int n){
     int cowCount = 1;
     int lastPos = stalls[0];
