@@ -25,7 +25,7 @@ public:
                 mini = min(mini, diff);
             }
 
-            // this for the 11:59 and 00:00 case in which 00:00 will be considered as less than 11:59 but here it is 12:00 0r 24:00 So we are adding 1440 or you can replace it as 24 which will be considered as 12:00 and subtracting it from the last element.
+            // this for the 11:59 and 00:00 case in which 00:00 will be considered as less than 11:59 but here it is 12:00 0r 24:00 So we are adding 1440 which will be considered as 12:00 and subtracting it from the last element.
             int lastDiff = (minutes[0] + 1440) - minutes[n-1];
             // Again checking for the minimum element
             mini = min(mini, lastDiff);  
